@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Status Pizza Viewer</title>
-  <link rel="stylesheet" href="style.css" />
-  <script type="module" src="script.js" defer></script>
-</head>
-<body>
-  <h1>Status Pizza</h1>
-    <input type="number" id="statusInput" placeholder="Enter status code (e.g., 404)" />
-    <button id="checkBtn">Check Status</button>
-
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Status Pizza Viewer</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Status Pizza</h1>
+        <input
+            type="number"
+            id="statusInput"
+            placeholder="Enter status code (e.g., 404)"
+        />
+        <button id="checkBtn">Check Status</button>
+        <div id="resultContainer">
+            <img id="statusImage" src="" alt="Status Pizza" />
+            <pre id="jsonOutput"></pre>
+        </div>
+    </body>
 </html>
