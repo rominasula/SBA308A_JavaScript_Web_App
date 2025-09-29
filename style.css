@@ -19,8 +19,23 @@ img {
   margin: 20px 0;
 }
 
-#galleryContainer img {
-  width: 150px;
-  display: block;
-  margin: 0 auto 10px auto;
+#galleryContainer {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping on multiple rows */
+  justify-content: center;  /* center horizontally */
+  gap: 20px;                /* space between cards */
+  margin-top: 20px;
 }
+
+.galleryItem {
+  text-align: center;
+  width: 150px;
+}
+
+.galleryItem img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
