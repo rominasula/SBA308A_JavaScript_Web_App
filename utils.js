@@ -6,7 +6,11 @@ export function updateImage(code, imgElement) {
 }
 
 export function updateJSONOutput(data, outputElement) {
-    outputElement.textContent = JSON.stringify(data, null, 2);
+    outputElement.innerHTML = `
+        <p><strong>Code:</strong> ${data.code}</p>
+        <p><strong>Title:</strong> ${data.title}</p>
+        <p><strong>Category:</strong> ${data.category}</p>
+    `;
 }
 
 export function showError(message, imgElement, outputElement) {
